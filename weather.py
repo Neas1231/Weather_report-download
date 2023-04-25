@@ -1,10 +1,3 @@
-pip install streamlit
-pip install pandas
-pip install Pillow
-pip install streamlit-on-Hover-tabs
-pip install torch
-pip install torchvision
-pip install PyDrive
 import scipy
 import os
 from PIL import Image
