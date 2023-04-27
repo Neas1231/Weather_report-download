@@ -1,10 +1,3 @@
-pip install streamlit
-pip install pandas
-pip install Pillow
-pip install streamlit-on-Hover-tabs
-pip install torch
-pip install torchvision
-pip install PyDrive
 import scipy
 import os
 from PIL import Image
@@ -14,11 +7,11 @@ from st_on_hover_tabs import on_hover_tabs
 import torch
 import torch.nn as nn
 from torchvision import datasets, models, transforms
-from pydrive.auth import GoogleAuth
-from pydrive.drive import GoogleDrive
+#from pydrive.auth import GoogleAuth
+#from pydrive.drive import GoogleDrive
 
-gauth = GoogleAuth()
-drive = GoogleDrive(gauth)
+#gauth = GoogleAuth()
+#drive = GoogleDrive(gauth)
 
 dictuar = {0:'Ясно' ,1:'Облачно' ,2:'Туман' ,3:'Мороз' ,4:'Град' ,5:'Молния',6: 'Нет погоды' , 7:'Дождь', 8:'Радуга',
            9:'Снег', 10:'Восход'}
