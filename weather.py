@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# coding: utf-8
 import scipy
 import os
 from PIL import Image
@@ -43,14 +45,14 @@ if uploaded_file is not None:
        
        model.eval()
        preds = model(image.unsqueeze(0))
-
+       #st.write(preds.argmax())
        if st.button('Показать результат'):
           st.write(dictuar[int(preds.argmax())])
-          a = preds.max()
-          preds[preds == a] = 0
-          st.write()
-          if preds[preds >=0.9].any():
-              st.write(dictuar[int(preds.argmax())])
+          #a = preds.max()
+          #preds[preds == a] = 0
+          #st.write(preds.argmax())
+          #if preds[preds >=0.9].any():
+              #st.write(dictuar[int(preds.argmax())])
 
 
 
